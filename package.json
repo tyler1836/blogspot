@@ -1,5 +1,5 @@
 {
-  "name": "workout-tracker",
+  "name": "cms-blog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tyler1836/workout-tracker.git"
+    "url": "git+https://github.com/tyler1836/cms-blog.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tyler1836/workout-tracker/issues"
+    "url": "https://github.com/tyler1836/cms-blog/issues"
   },
-  "homepage": "https://github.com/tyler1836/workout-tracker#readme"
+  "homepage": "https://github.com/tyler1836/cms-blog#readme"
 }
