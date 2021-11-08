@@ -1,0 +1,11 @@
+<div class="navigation">
+    {{!-- logo --}}
+    <ul class="navbar">
+        <li><a href="/">Home</a></li>
+        {{#unless session.loggedIn}} <li><a href="/api/login">Login</a></li>{{/unless}}
+        {{#if session.loggedIn}} <li><a href="/api/login" id="logout">Logout</a></li> {{/if}}
+        {{#unless session.loggedIn}} <li><a href="/api/signup">Signup</a></li>{{/unless}}
+        {{#if session.loggedIn}} <li><a href="/api/dashboard">Dashboard</a></li>{{/if}}
+    </ul>
+
+</div>

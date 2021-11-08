@@ -1,0 +1,46 @@
+ {{> navbar}}
+ <form class="form-signin text-center">
+
+   
+
+
+    {{!-- <form class="login" wtx-context="">
+      <h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
+     <div class="form-floating">
+          <label class="label" for="email-login">Email</label>
+          <input class="form-control" type="email" id="email-login" placeholder="Email">
+          <label class="label" for="password-login">Password</label>
+          <input class="form-control" type="password" id="password-login" placeholder="Password">
+       </div>
+          <button class="yellow button w-100 btn-lg btn-primary" type="submit">
+            Login
+          </button>
+        
+
+    </form> --}}
+
+
+<form wtx-context="EA2E70A7-FBF0-4E2F-80FA-AAEF04C000F1">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" wtx-context="4FB86019-7AF1-455E-8AE6-82924E734B54">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" wtx-context="ECCD07C3-7C80-4EBF-B812-0F827017273E">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me" wtx-context="411D4607-4CA9-4A60-9070-9CA456EA66EF"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary yellow" type="submit">Sign in</button>
+
+  </form>
+{{> footer}}
+
+</form>
+<script src="/login.js"></script>

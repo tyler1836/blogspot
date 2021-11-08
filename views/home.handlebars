@@ -1,0 +1,17 @@
+{{> navbar }}
+    <div class="posts">
+   
+    
+    {{#each posts}}
+    <div class="card" style="width: 36rem;">
+     <div class="card-body mb-3">
+        <h5 id="{{id}}" class="card-title mb-3">Title: {{title}}</h5>
+         <p class="card-text">{{post_text}}</p>
+         <span>{{comment_text}}</span>
+    
+    
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{> footer}}
