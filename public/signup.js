@@ -21,7 +21,7 @@ async function signupFormHandler(event) {
             console.log('success');
 
 
-            document.location.replace('/api/dashboard');
+            document.location.replace('/');
 
         } else {
             alert(response.statusText);

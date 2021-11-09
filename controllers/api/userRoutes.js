@@ -67,30 +67,7 @@ router.post('/signup', (req, res) => {
 			res.status(500).json(err);
 		});
 });
-// router.post('/signup', async (req, res) => {
 
-//   const { username, email, password } = req.body;
-
-//   let user = await User.findOne({
-//     where: {email}
-//   });
-//   console.log(chalk.blue(user));
-
-//   // if (!user) {
-//   //   return res.redirect('/login');
-//   // }
-
-//   user = new User({
-//     username,
-//     email,
-//     password
-//   });
-
-//   await user.save();
-
-//   res.redirect('/login');
-
-// });
 router.post('/login', async (req, res) => {
 	// expects {email: password:}
 	const { email, password } = req.body;
