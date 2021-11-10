@@ -1,0 +1,35 @@
+{{> navbar}}
+<button class="createpost w-100 btn btn-lg btn-primary yellow" type="button">Create Post</button>
+<form  class="form-signin text-center hide">
+    
+    <form wtx-context="EA2E70A7-FBF0-4E2F-80FA-AAEF04C000F1">
+    <h1 class="h3 mb-3 fw-normal">Make a new Post</h1>
+
+    <div class="form-floating">
+      <input type="title" class="form-control" id="floatingInput"  wtx-context="4FB86019-7AF1-455E-8AE6-82924E734B54">
+      <label for="floatingInput">Title</label>
+    </div>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" wtx-context="ECCD07C3-7C80-4EBF-B812-0F827017273E">
+      <label for="floatingPassword">Text</label>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-primary yellow" type="submit">Submit</button>
+
+  </form>
+</form>
+    <div class="posts">
+    {{#each posts}}
+    <div class="card" style="width: 36rem;">
+     <div class="card-body mb-3">
+        <h5 id={{id}} class="card-title mb-3">Title: {{title}}</h5>
+         <p class="card-text">{{post_text}}</p>
+         <span>{{comment_text}}</span>
+    
+    
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{> footer}}
+<script src="/dashboard.js"></script>

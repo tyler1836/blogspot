@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
       
     ]
   }).then((dbPostData) => {
-    // console.log(dbPostData[4].Comments)
     let posts = dbPostData.map((post) => post.get({plain: true}))
     console.log(posts[0].Comments)
     res.render('home', {posts})

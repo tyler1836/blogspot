@@ -37,14 +37,22 @@ router.get('/dashboard', loggedIn, (req, res) => {
 	})
 		.then((dbPostData) => {
 			const posts = dbPostData.map((post) => post.get({ plain: true }));
-			res.render('notespage', { posts, loggedIn: true });
+			res.render('dashboard', { posts, loggedIn: true });
 		})
 		.catch((err) => {
 			console.log(err);
 			res.status(500).json(err);
 		});
 });
-
+router.post('/dashboard', (req, res) => {
+	Post.create({
+		title: req.body.title,
+		post_text: req.body.text,
+		user_id: req.session.user_id
+	})
+	.then((dbPostData) => res.json(dbPostData))
+	.catch(err => res.status(500).json(err))
+})
 
 router.post('/signup', (req, res) => {
 	User.create({

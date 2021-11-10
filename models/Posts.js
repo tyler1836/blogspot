@@ -34,13 +34,13 @@ Post.init(
         //     }
         // }
 
-        // user_id: {
-        //     type: DataTypes.INTEGER,
-        //     references: {
-        //         key: "id",
-        //         model: "user",
-        //     },
-        // },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                key: "id",
+                model: "user",
+            },
+        },
       
     },
 
