@@ -13,7 +13,6 @@ router.get('/', (req, res) => {
     ]
   }).then((dbPostData) => {
     let posts = dbPostData.map((post) => post.get({plain: true}))
-    console.log(posts[0].Comments)
     res.render('home', {posts})
   }).catch((err) => {
     console.log(err, 'error in home route')
